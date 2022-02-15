@@ -11,7 +11,6 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -20,21 +19,30 @@ nav ul {
     flex: 1;
     max-width: 30%;
     justify-content: space-evenly
-
+    list-style-type: none;
 }
 
 nav li {
     display: inline;
+   
 }
 
 nav a {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    color: #ffffff;
+    color: #303030;
     font-size: 1.3em;
-    padding: 0.3em 0.7em;
+    padding: 0.2em 0.7em;
     margin: 10px;
-    background-color: hsla(0, 0%, 50%, 0.5);
+    background-color: #ffffff;
+    transition: 0.2s ease-in-out;
+    border: 2px solid hsla(0, 0%, 100%, 1);
+}
+
+nav a:hover {
+    background-color: hsl(240, 86%, 50%);
+    color: #ffffff;
+    transform: translateY(-0.15em);
 }
 
 h1 {
@@ -79,8 +87,14 @@ h1 {
 }
 
 #progress div div {
-    width: 75%;
+    width: 25%;
     height: 13px;
     background-color: hsl(240, 86%, 50%);
     margin-left: 0px;
+    transition: 1s;
+}
+
+#progress div div:hover {
+    width: 100%;
+    margin-right: 0px;
 }
