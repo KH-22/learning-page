@@ -1,0 +1,25 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover ;
+    background-repeat: none;
+    background-position: center;
+    background-color: grey;
+
+}
+
+nav ul, li {
+    display: inline;
+}
+
+nav li {
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.3em 1em;
+    border: 1px solid black;
+}
