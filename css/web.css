@@ -55,7 +55,7 @@ h1 {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #slogan {
@@ -111,7 +111,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .panel {
@@ -121,18 +121,19 @@ section {
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     text-transform: uppercase;
 }
 
 .pricing-plan {
     border-bottom: 2px solid #e1f1ff;
+    padding-top: 30px;
 }
 
-.pricing-plan:last-child{
+/* .pricing-plan:last-child{
     border-bottom: none;
-}
+} */
 
 ul {
 padding-inline-start: 0;
@@ -141,4 +142,60 @@ padding-inline-start: 0;
 li {
     list-style: none;
 
+}
+
+.pricing-header {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #616161;
+}
+
+.pricing-features {
+/* margin: 50px 0 25px; */
+color: hsl(240, 86%, 50%);
+font-family:'Courier New', Courier, monospace;
+
+}
+
+.pricing-features-item {
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 10px 0;
+    border-top: 2px solid #e1f1ff;
+}
+
+.pricing-features-item:nth-of-type(2) {
+    font-weight: 100;
+    font-size: 1em;
+    border-bottom: 2px solid #e1f1ff;
+}
+
+.pricing-price {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: 600;
+    color: #F76E11;
+    display: block;
+}
+
+.pricing-button {
+    border: 1px solid hsl(240, 86%, 60%);
+    border-radius: 0.5em;
+    color: hsl(240, 86%, 50%);
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin: 25px 0;
+    transition: 200ms ease-in-out;
+
+}
+
+.pricing-button:hover, .pricing-button:focus{
+background-color: hsl(240, 86%, 50%);
+color: white;
 }
